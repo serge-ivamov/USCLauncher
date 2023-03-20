@@ -7,7 +7,7 @@
 
 import Foundation
 
-let gameVersion = "Version: 0.5.0 / Git commit: 2022-01-15_5250afb5"
+let gameVersion = "Version: 0.5.0 / Git commit: 2023-01-22_6629139d"
 let gameAttention = "The settings page has been disabled due to a bug in the game. "
 
 let songsFolder = Bundle.main.resourceURL?.appendingPathComponent("unnamed-sdvx-clone/songs/").absoluteURL

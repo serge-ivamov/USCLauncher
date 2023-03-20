@@ -11,7 +11,7 @@ func runGame() {
     let task = Process()
     task.executableURL = gameBin
     task.currentDirectoryURL = gameFolder
-    task.environment = ["DYLD_LIBRARY_PATH":"lib/"]
+    task.environment = ["DYLD_LIBRARY_PATH":"lib/", "DYLD_FALLBACK_LIBRARY_PATH":"lib/"]
     var args: [String] = []
     if (UserDefaults.gameForceFS == "1") { args.append("-fullscreen") }
     if (UserDefaults.gameAutoplay == "1") { args.append("-autoplay") }
